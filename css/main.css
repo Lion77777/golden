@@ -1,0 +1,217 @@
+body {
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+div {
+	box-sizing: border-box;
+}
+
+.clearfix:after {
+	clear: both;
+	content: '';
+	display: table;
+	width: 100%;
+}
+
+header {
+	background: url('../img/first-bg.jpg') no-repeat center top / cover;
+	padding: 0 0 160px;
+}
+
+.container {
+	margin: 0 auto;
+	width: 930px;
+}
+
+.logo {
+	float: left;
+	margin: 41px 0 0;
+}
+
+nav {
+	float: right;
+}
+
+.menu {
+	display: block;
+	margin: 50px 0 0;
+	padding: 0;
+}
+
+.menu li {
+	display: block;
+	float: left;
+	margin: 0 41px 0 0;
+}
+
+.menu li a {
+	color: #fff;
+	font-size: 14px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.titles__first {
+	color: #fff;
+	font-size: 40px;
+	margin: 180px 0 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h1 {
+	color: #fff;
+	font-size: 75px;
+	margin: 15px 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.button {
+	background: #fed136;
+	border-radius: 3px;
+	color: #484543;
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 50px auto 0;
+	padding: 20px 0;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 240px;
+}
+
+.title {
+	padding: 115px 0 90px;
+}
+
+.title h2 {
+	font-size: 40px;
+	font-weight: bold;
+	margin: 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.title p {
+	color: #777;
+	font-size: 16px;
+	margin: 5px 0 0;
+	text-align: center;
+}
+
+#services {
+	padding: 0 0 120px;
+}
+
+.services__item {
+	float: left;
+	text-align: center;
+	width: 270px;
+}
+
+.services__item h3 {
+	font-size: 18px;
+	margin: 15px 0 5px;
+}
+
+.services__item p {
+	color: #777;
+	font-size: 14px;
+	line-height: 1.55em;
+}
+
+.services__item:last-child {
+	float: right;
+}
+
+.services__item:nth-child(2) {
+	margin: 0 0 0 60px;
+}
+
+#portfolio {
+	background: #f7f7f7;
+	padding: 0 0 130px
+}
+
+.works {
+	margin: 70px 0 0;
+}
+
+.works img {
+	float: left;
+}
+
+.works img:last-child {
+	float: right;
+}
+
+.works img:nth-child(2) {
+	margin: 0 0 0 29px;
+}
+
+.projects {
+	padding: 0 0 55px;
+}
+
+.projects__item {
+	margin: 0 70px 90px 35px;
+}
+
+.projects__text {
+	width: 280px;
+}
+
+.text-left {
+	float: left;
+	text-align: right;
+}
+
+.text-right {
+	float: right;
+	text-align: left;
+}
+
+.projects__text h3{
+	color: #222;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.projects__header {
+	color: #222;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 10px 0 10px;
+}
+
+.projects__cont {
+	color: #777;
+	font-size: 14px;
+	line-height: 1.55em;
+}
+
+.projects__img-left {
+	margin: 0 0 0 40px;
+}
+
+.projects__img-right {
+	float: right;
+	margin: 0 40px 0 0;
+}
+
+footer {
+	padding: 60px 0
+}
+
+footer p {
+	color: #555;
+	font-size: 14px;
+	margin: 0 auto;
+	width: 242px;
+}
