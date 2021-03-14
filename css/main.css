@@ -1,95 +1,22 @@
-body {
-	font-family: 'Arial', sans-serif;
+/* Global styles */
+* {
 	margin: 0;
 	padding: 0;
-}
-
-div {
 	box-sizing: border-box;
 }
 
-.clearfix:after {
-	clear: both;
-	content: '';
-	display: table;
-	width: 100%;
-}
-
-header {
-	background: url('../img/first-bg.jpg') no-repeat center top / cover;
-	padding: 0 0 160px;
+body {
+	font-family: 'Arial', sans-serif;
+	font-size: 14px;
 }
 
 .container {
 	margin: 0 auto;
-	width: 930px;
-}
-
-.logo {
-	float: left;
-	margin: 41px 0 0;
-}
-
-nav {
-	float: right;
-}
-
-.menu {
-	display: block;
-	margin: 50px 0 0;
-	padding: 0;
-}
-
-.menu li {
-	display: block;
-	float: left;
-	margin: 0 41px 0 0;
-}
-
-.menu li a {
-	color: #fff;
-	font-size: 14px;
-	text-decoration: none;
-	text-transform: uppercase;
-}
-
-.titles__first {
-	color: #fff;
-	font-size: 40px;
-	margin: 180px 0 0;
-	text-align: center;
-	text-transform: uppercase;
-}
-
-h1 {
-	color: #fff;
-	font-size: 75px;
-	margin: 15px 0;
-	text-align: center;
-	text-transform: uppercase;
-}
-
-.button {
-	background: #fed136;
-	border-radius: 3px;
-	color: #484543;
-	display: block;
-	font-size: 18px;
-	font-weight: bold;
-	margin: 50px auto 0;
-	padding: 20px 0;
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
-	width: 240px;
-}
-
-.title {
-	padding: 115px 0 90px;
+	width: 70%;
 }
 
 .title h2 {
-	font-size: 40px;
+	font-size: 38px;
 	font-weight: bold;
 	margin: 0;
 	text-align: center;
@@ -98,86 +25,233 @@ h1 {
 
 .title p {
 	color: #777;
-	font-size: 16px;
-	margin: 5px 0 0;
+	font-size: 15px;
+	margin: 10px 0 0;
 	text-align: center;
+	letter-spacing: 0.02em;
 }
+
+/* Global styles END */
+
+/* HEADER STYLES */
+.header {
+	background: url('../img/first-bg.jpg') no-repeat center top / cover;
+	padding: 0 0 160px;
+}
+
+.header__head {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 43px 0 0;
+	position: relative;
+	flex-wrap: wrap;
+}
+
+.header__logo {
+	height: 100%;
+	margin: 0px 0px 0px 27px;
+}
+
+.header__navigation {
+	width: 487px;
+}
+
+.header__menu {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.header__menu li {
+	margin: 0 40px 0 0;
+}
+
+.header__menu li a {
+	color: #fff;
+	font-size: 14px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.header__humburger-btn {
+	display: none;
+	border: 0;
+	background: none;
+	outline: none;
+}
+
+.header__humburger-btn:focus {
+	outline: none;
+}
+
+.header__humburger-btn .fa-bars {
+	color: #fff;
+	font-size: 25px;
+}
+
+.header__hamburger-menu {
+	display: none;
+	position: absolute;
+    top: 86px;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 25px;
+    border-radius: 15px;
+    flex-direction: column;
+    text-align: center;
+	width: 100%;
+}
+
+.header__hamburger-menu li {
+	padding: 10px 0;
+	border-bottom: 1px solid #fff;
+}
+
+.header__hamburger-menu li:hover {
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.header__hamburger-menu li a {
+	color: #fff;
+	font-size: 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.titles {
+	margin: 195px 0 0;
+}
+
+.titles__first {
+	color: #fff;
+	font-size: 37px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.01em;
+	margin: 0;
+}
+
+.header h1 {
+	color: #fff;
+	font-size: 70px;
+	margin: 32px 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.header .button {
+	background: #fed136;
+	border-radius: 3px;
+	color: #484543;
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 45px auto 0;
+	padding: 20px 0;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 235px;
+}
+/* HEADER STYLES END */
+
+/* SERVICES SECTION STYLES */
 
 #services {
 	padding: 0 0 120px;
 }
 
+#services .title {
+	padding: 108px 0 0;
+}
+
+.services {
+	display: flex;
+	justify-content: space-between;
+	margin: 74px 0px 0;
+}
+
 .services__item {
-	float: left;
 	text-align: center;
-	width: 270px;
+	width: 33%;
+	padding: 0 36px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 }
 
 .services__item h3 {
-	font-size: 18px;
-	margin: 15px 0 5px;
+	font-size: 17px;
+	margin: 22px 0 0;
+	letter-spacing: 0.02em;
 }
 
 .services__item p {
 	color: #777;
-	font-size: 14px;
-	line-height: 1.55em;
+	font-size: 12px;
+	line-height: 1.7em;
+	margin: 10px 0 0;
+	letter-spacing: 0.02em;
 }
 
-.services__item:last-child {
-	float: right;
-}
+/* SERVICES SECTION STYLES END */
 
-.services__item:nth-child(2) {
-	margin: 0 0 0 60px;
-}
+/* PORTFOLIO SECTION STYLES */
 
 #portfolio {
 	background: #f7f7f7;
-	padding: 0 0 130px
+	padding: 106px 0 120px
 }
 
 .works {
-	margin: 70px 0 0;
+	margin: 73px 0 0;
+	display: flex;
+	justify-content: space-around;
 }
 
-.works img {
-	float: left;
-}
+/* PORTFOLIO SECTION STYLES END */
 
-.works img:last-child {
-	float: right;
-}
+/* ABOUT US SECTION STYLES */
 
-.works img:nth-child(2) {
-	margin: 0 0 0 29px;
+.aboutUs{
+	padding: 120px 0 0;
 }
 
 .projects {
-	padding: 0 0 55px;
+	padding: 0 72px;
+	margin: 82px 0 0;
 }
 
 .projects__item {
-	margin: 0 70px 90px 35px;
+	margin: 0 0 86px;
+	display: grid;
+	grid-template-columns: 277px 250px;
+	grid-template-rows: 185px;
 }
 
-.projects__text {
-	width: 280px;
+.projects__item:last-child {
+	margin: 0;
 }
 
 .text-left {
-	float: left;
 	text-align: right;
+	grid-column: 1/2;
 }
 
 .text-right {
-	float: right;
 	text-align: left;
-}
+	grid-column: 3/4;
+	margin: 0 0 0 4px
+} 
 
 .projects__text h3{
 	color: #222;
-	font-size: 18px;
+	font-size: 17px;
 	font-weight: bold;
 	margin: 0;
 	text-transform: uppercase;
@@ -185,9 +259,10 @@ h1 {
 
 .projects__header {
 	color: #222;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: bold;
-	margin: 10px 0 10px;
+	margin: 7px 0 10px;
+	letter-spacing: 0.02em;
 }
 
 .projects__cont {
@@ -197,21 +272,176 @@ h1 {
 }
 
 .projects__img-left {
-	margin: 0 0 0 40px;
+	margin: -7px 0 0 37px;
+	grid-column: 2/3;
 }
 
 .projects__img-right {
-	float: right;
-	margin: 0 40px 0 0;
+	grid-column: 2/3;
+	grid-row: 1/2;
+	margin: -6px 0 0 40px;
 }
+/* ABOUT US SECTION STYLES END */
+
+/* FOOTER STYLES */
 
 footer {
-	padding: 60px 0
+	padding: 94px 0
 }
 
 footer p {
 	color: #555;
 	font-size: 14px;
 	margin: 0 auto;
-	width: 242px;
+	width: 220px;
+	letter-spacing: -0.7px;
+}
+
+/* FOOTER STYLES END */
+
+/*--------- MEDIA QUERIES --------*/
+
+/*--------- 992px - 1200px --------*/
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 85%;
+	}
+}
+
+/*--------- 768px - 992px --------*/
+@media screen and (max-width: 992px) {
+	.container {
+		width: 85%;
+	}
+
+	/* HEADER Media STYLES */
+	.header h1 {
+		font-size: 55px;
+	}
+
+	.titles__first {
+		font-size: 35px;
+	}
+
+	/* PORTFOLIO SECTION Meadi STYLES */
+	.works {
+		margin: 73px 0 0;
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.works img {
+		margin: 0 0 20px;
+	}
+
+	/* ABOUT US SECTION Media STYLES */
+	.text-right {
+		text-align: left;
+		grid-column: 2/3;
+		margin: 0 0 0 4px
+	}
+
+	.projects__img-right {
+		grid-column: 1/2;
+	}
+}
+
+/*--------- 576px - 768px --------*/
+@media screen and (max-width: 767px) {
+	/* HEADER Media STYLES */
+	.header__navigation {
+		margin: 25px 0 0;
+	}
+
+	.header h1 {
+		font-size: 50px;
+	}
+
+	.titles__first {
+		font-size: 30px;
+	}
+
+	/* SERVICES SECTION Media STYLES */
+	.services {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.services__item {
+		width: 75%;
+		margin-bottom: 35px;
+		padding: 0 36px 35px;
+		border-bottom: 1px solid #777;
+	}
+
+	/* ABOUT US SECTION Media STYLES */
+	.projects__item {
+		grid-template-columns: 250px 250px;
+	}
+
+	.projects {
+		padding: 0;
+	}
+}
+
+/*--------- 425px - 576px --------*/
+@media screen and (max-width: 575px) {
+	/* HEADER Media STYLES */
+	.header__menu {
+		display: none;
+	}
+
+	.header__navigation {
+		margin: 0;
+		width: 40px;
+	}
+
+	.header__humburger-btn {
+		display: block;
+	}
+
+	.header h1 {
+		font-size: 40px;
+	}
+
+	.titles__first {
+		font-size: 30px;
+	}
+
+	/* ABOUT US SECTION Media STYLES */
+	.projects__item {
+		grid-template-columns: 270px;
+		grid-template-rows: 185px 185px;
+		row-gap: 42px;
+	}
+
+	.projects__text {
+		grid-row: 1/2;
+		grid-column: 1/2;
+	}
+
+	.projects__img-left, .projects__img-right {
+		grid-row: 2/3;
+		grid-column: 1/2;
+	}
+}
+
+
+/*--------- 375px - 425px --------*/
+@media screen and (max-width: 425px) {
+	/* HEADER Media STYLES */
+	.header h1 {
+		font-size: 25px;
+	}
+
+	.titles__first {
+		font-size: 20px;
+	}
+
+	.button {
+		font-size: 15px;
+		width: 190px;
+	}
 }
